@@ -1,4 +1,4 @@
-from pipeline.base_data_integrator import BaseDataIntegrator
+from data_blocks.base_data_integrator import BaseDataIntegrator
 import pandas as pd
 
 class DummyIntegrator(BaseDataIntegrator):

@@ -1,6 +1,6 @@
 import pandas as pd
 
-from pipeline.base_data_driver import BaseDataDriver
+from data_blocks.base_data_driver import BaseDataDriver
 
 
 class ERPNextDriver(BaseDataDriver):
@@ -9,4 +9,4 @@ class ERPNextDriver(BaseDataDriver):
 
     def fetch_data(self) -> pd.DataFrame:
         # Fetch data from ERPNext
-        pass
+        return pd.DataFrame({"data": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]})
