@@ -7,9 +7,14 @@ license = "BSD-3"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
-pandas = "^2.2.2"
+python = ">=3.10,<4.0"
 fastapi = {extras = ["standard"], version = "^0.112.0"}
+mongoengine = "^0.29.1"
+uvicorn = "^0.34.0"
+geopy = "^2.4.1"
+requests = "^2.32.3"
+pandas = "^2.2.3"
+pytest = "^8.4.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.8.0"
